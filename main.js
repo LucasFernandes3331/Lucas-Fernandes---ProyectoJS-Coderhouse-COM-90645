@@ -1,7 +1,9 @@
+// declarando variables (let y const).
 const bebidas = ["Agua", "Jugo", "Gaseosa"];
 const valores = [600, 750, 1500];
 let total = 0;
 
+//function para mostrar las bebidas disponibles.
 function mostrarBebidas() {
   alert(`Productos disponibles:
     1- Agua
@@ -9,6 +11,7 @@ function mostrarBebidas() {
     3- Gaseosa`);
 }
 
+// function para realizar una switch case con las distintas elecciones posibles del usuario.
 function elegirBebidas() {
   let opciones = prompt("¿Qué gaseosa querés comprar?, Seleccione: 1, 2 o 3");
 
@@ -33,9 +36,11 @@ function elegirBebidas() {
   console.log("Total: $" + total);
 }
 
+// function para darle un inicio a la tienda, esto es lo primero que se va a mostrar.
 function iniciarTienda() {
   alert("¡Bienvenido!, ¿desea comprar una bebida?");
 
+// variable para determinar el bucle de toda la "tienda de bebidas".
   let continuar = true;
 
   while (continuar) {
@@ -45,6 +50,7 @@ function iniciarTienda() {
     continuar = confirm("¿Querés comprar otro producto?");
   }
 
+//finalizando la compra.
   alert("Gracias por tu compra. Total gastado: $" + total);
   console.log("Compra finalizada. Total: $" + total);
 }
